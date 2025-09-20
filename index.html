@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link  rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Valdz's Personal Branding</title>
+</head>
+<body>
+    <header id="headerr1">
+        <div class="begin fade-down">
+            <h1>Valdz</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Home1">Home</a></li>
+                    <li><a href="#about1">About</a></li>
+                    <li><a href="#porto">Portofolio</a></li>
+                    <li><a href="#contact1">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <section id="Home1" class="HOME fade-up">
+        <div class="container1">
+            <div class="text">
+              <h3> Hello it's me </h3>
+              <h1> Valdz</h1>
+              <h4> I'm a front end developer </h4>
+              <p> I build modern, responsive and innovative web apps with clean ui and smooth ux blending design, Hope U can enjoy my website.</p>
+              <div class="social fade-right">
+                <a href="https://github.com/valdz56" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/osvaldo julyanto" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/osvald._" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@vldznmd" target="_blank"><i class="fab fa-tiktok"></i></a>
+              </div>
+              <button id="button10" class="button1 fade-up">More about me</button>
+            </div>
+            <img src="image.png" class="profile fade-left">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="About fade-up" id="about1">
+        <div class="Card">
+            <div class="text1">
+                <h1>About Me</h1>
+                <p>Hello everyone, my name is Osvaldo, a.k.a Vldz. 
+                    I'm a high school student who is interested in making websites and I have three months of experience in this field. 
+                    Previously, I learned competitive programming, and now I want to apply what I learned through real projects. 
+                    I chose to create a website, and I will continue learning and never stop improving my skills.
+                </p>
+                <button class="CV zoom-in">
+                  <i class="fa-solid fa-download"></i> Download CV
+                </button>
+            </div>
+            <img src="vldz.png" class="profile1 fade-right">
+        </div>
+
+        <div class="card2">
+          <div class="card fade-left">
+              <i class="fa-solid fa-diagram-project"></i>
+              <h3>Total Projects</h3>
+              <p>3</p>
+              <span>Interactive web and this portfolio included</span>
+          </div>
+
+          <div class="card zoom-in">
+              <i class="fa-solid fa-certificate"></i>
+              <h3>Certificate</h3>
+              <p>1</p>
+              <span>Professional skills validated</span>
+          </div>
+
+          <div class="card fade-right">
+              <i class="fa-solid fa-clock"></i>
+              <h3>Months of experience</h3>
+              <p>3</p>
+              <span>Project only</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- PORTOFOLIO -->
+    <section class="Portofolio fade-up" id="porto">
+        <h1>Portofolio Showcase</h1>
+        <p>Explore my Journey through Projects, certification and technical expertise. Each section is my Milestone in my continous path</p>
+
+        <div class="contbutt fade-down">
+            <button class="flex items-center gap-2 px-4 py-2 bg-purple-500 text-white rounded" id="BTNPro">
+              <i class="fas fa-folder"></i> Projects
+            </button>
+            <button class="flex items-center gap-2 px-4 py-2 bg-purple-500 text-white rounded" id="BTNSkill">
+              <i class="fas fa-code"></i> Skill
+            </button>
+            <button class="flex items-center gap-2 px-4 py-2 bg-purple-500 text-white rounded" id="BtnCerti">
+              <i class="fas fa-certificate"></i> Certificate
+            </button>
+        </div>
+
+        <div class="sectionProject fade-up" id="sectionProjects">
+            <div class="CardPT fade-left">
+                <img src="PTweb.png" class="imgpt">
+                <h2> Personal Trainer branding website</h2>
+                <p>This website is for personal trainers who want to market their services to people who want to start a fitness and healthy lifestyle.</p>
+                <a href="https://mellifluous-horse-bdc657.netlify.app" class="ButtonPT">Details →</a>
+            </div>
+
+            <div class="CardInvation fade-right">
+                <img src="Invationweb.png" class="imginv">
+                <h2>Invation birthday website</h2>
+                <p>This website is for people who want to celebrate their birthday and send an online invitation to their friends, so that they can manage their invitations.</p>
+                <a href="https://lively-truffle-b8f67c.netlify.app" class="ButtonInvation">Details →</a>
+            </div>
+        </div>
+
+        <div class="hidden fade-up" id="sectionSkill">
+            <div class="skill zoom-in">
+              <i class="fa-brands fa-html5 fa-3x" style="color:#e34c26;"></i>
+              <p>HTML</p>
+            </div>
+            <div class="skill zoom-in">
+              <i class="fa-brands fa-css3-alt fa-3x" style="color:#1572b6;"></i>
+              <p>CSS</p>
+            </div>
+            <div class="skill zoom-in">
+              <i class="fa-brands fa-js fa-3x" style="color:#f7df1e;"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill zoom-in">
+              <i class="fa-brands fa-python fa-3x" style="color:#3776ab;"></i>
+              <p>Python</p>
+            </div>
+            <div class="skills zoom-in">
+              <div class="skill">
+                <div class="circle">C++</div>
+                <p>C++</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="hidden fade-up" id="sectionCertificate">
+            <div class="Sertifikat zoom-in">
+              <img src="sertifikat.png" class="Serti">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact fade-up" id="contact1">
+      <h1> Contact Me</h1>
+      <p>Got a question? Send me message and I'll get back to you soon</p>
+      <div class="containerformcom">
+        <div class="Form1 fade-left">
+          <h2>Get in Touch</h2>
+          <p>Have something to discuss? send me a message and let's talk</p>
+          <form id="getintouchform" action="https://formcarry.com/s/YVCqXoYpmnJ" method="POST" accept-charset="UTF-8" class="Knowmeform">
+            <input type="text" name="nama" placeholder="👤 Name" id="Name1"><br><br>
+            <input type="text" name="Email" placeholder="✉️ Email" id="Email1"><br><br>
+            <textarea placeholder="💬Message" class="message1"></textarea>
+            <button type="submit">✈️ Send Message</button>
+          </form>
+        </div>
+
+        <div class="comment fade-right" id="comment1">
+          <h2>Comments (<span id="commentCount">0</span>)</h2>
+          <form id="commentfrom">
+            <label for="Name">Name</label><br>
+            <input type="text" id="Name2" placeholder="👤 Name"><br><br>
+            <label for="Message">Comment</label><br>
+            <textarea id="Message1" placeholder="💬Comment"></textarea>
+            <button type="submit">✈️ Send Comment</button>
+          </form>
+          <div id="commentList"></div>
+        </div>
+      </div>
+    </section>
+    <button id="music-btn">🎵</button>
+    <audio id="bg-music" loop>
+  <source src="public/njay.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

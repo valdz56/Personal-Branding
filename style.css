@@ -1,0 +1,766 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;        /* ukuran standar */
+  line-height: 1.6;       /* biar teks lebih enak dibaca */
+  font-weight: 400;       /* normal */
+  color: #333;            /* warna teks (abu tua, lebih enak dari hitam pekat) */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;       /* heading lebih tebal */
+}
+header{
+      align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    justify-content: space-between;
+    top:0;
+    z-index:1000;
+    backdrop-filter: blur(20px);
+   padding:20px 120px; 
+     background: transparent;  
+
+}
+header h1 {
+  font-family: 'Pacifico', cursive; 
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  animation: glow 2.5s infinite alternate;
+  margin: 0;
+  background: linear-gradient(90deg, #00ffff, #ff00ff, #a020f0);
+  background-clip: text;
+  -webkit-background-clip: text;  
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  /* Efek glow biar lebih keren */
+  text-shadow: 0 0 10px rgba(0,255,255,0.2),
+               0 0 20px rgba(255,0,255,0.3),
+               0 0 30px rgba(160,32,240,0.35);
+
+}
+.begin{
+    display: flex;
+    padding:0 2;
+    justify-content: space-between;
+}
+nav{
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap:5rem;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+}
+nav ul li{
+       padding: 0 1rem;
+         list-style: none; 
+}
+nav ul li a{
+   font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+background: linear-gradient(90deg, #00ffff, #ff00ff, #a020f0);
+background-clip: text;              /* standar */
+-webkit-background-clip: text;      /* untuk WebKit */
+color: transparent;
+-webkit-text-fill-color: transparent; /* untuk WebKit */
+  transition: all 0.3s ease;
+    display: inline-block
+}
+nav ul li a:hover{
+    transform: scale(1.1);
+}
+body {
+    min-height: 125vh;
+  background: linear-gradient(
+    135deg,
+    #1a0b2e 0%,   /* ungu kehitaman */
+    #2c0348 40%,  /* ungu gelap */
+    #5a189a 70%,  /* ungu agak terang */
+    #9d4edd 100%  /* ungu terang */
+  );
+  color: white;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+
+      
+}
+.HOME{
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 125vh;        
+  margin-left: 60px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container1{
+  gap: 200px;  
+  display: flex;
+  
+}
+.text{
+  display: column;
+}
+.profile {
+  width:300px;
+  height:290px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 20px rgba(160,32,240,0.4);
+}
+.profile {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile:hover {
+  transform: scale(1.08)!important;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
+}
+.container1 p{
+   max-width: 450px;
+}
+.text h1{
+  color: #ff00ff;
+  font-size: 45px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.text h3{
+    background: linear-gradient(to top, white,#f690f6 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* buat browser modern */
+  color: transparent;
+  font: 30px;
+  margin-bottom: 12px;
+}
+.text h4{   
+  margin-top: 9px;   
+  margin-bottom: 10px;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  animation: typing 3s steps(20, end) forwards, blink .5s step-end 6 alternate;
+  animation-delay: 0s, 3s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20ch; } /* hanya 25 karakter */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.social{
+    display: flex;
+  gap:40px;
+  margin-top: 30px;
+     backdrop-filter: blur(20px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social a{
+    font-size: 25px;
+    color: #efc8e7;
+
+}
+.social a:hover{
+  transform: scale(1.2);
+  text-shadow: 0 0 15px rgba(255,0,255,0.4);
+}
+.button1{
+  font-size: 15px;
+  font-family:'Poppins', sans-serif; 
+  font-weight: bold;
+   margin-top: 50px;
+   margin-left: 350px;
+   padding:14px;
+   border-radius: 20px;
+   color: black;
+   background: linear-gradient(145deg, #a3f1f1,#ef97ef, #d50fd5);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.button1:hover{
+  transform: scale(1.08) !important;
+  box-shadow: 0 0 15px rgba(255,0,255,0.4)!important;
+}
+.About{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* biar judul dan teks ke bawah */
+    min-height: 125vh;    
+  padding: 50px 0;
+}
+
+.Card{
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(0,255,255,0.15), rgba(255,0,255,0.15));
+    box-shadow: 0 0 20px rgba(160,32,240,0.3);
+    display: flex;
+    background: linear-gradient;
+    padding:40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+.Card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(255,0,255,0.5), 0 0 40px rgba(0,255,255,0.3);
+}
+.profile1 {
+  width:240px;
+  height:240px;
+  margin-left: 70px;
+  border-radius: 50%;
+}
+.CV{
+  padding: 10px;
+  background: #f543f5;
+  border-radius: 10px;
+  color: #F3F4F6;
+  font-weight: bold;
+}
+.CV:hover{
+   transform: scale(1.1)!important;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text1 h1{
+  color:#fdaffd
+}
+.text1 p{
+  max-width: 500px;
+}
+.card2{
+   display: flex;
+   margin-top: 70px;
+}
+.card,
+.card,
+.card{
+  background: rgba(255, 255, 255, 0.05); /* semi transparan */
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(160,32,240,0.3);
+  margin-right: 40px;
+}
+.card:hover,
+.card:hover,
+.card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 
+    0 0 25px rgba(255, 0, 255, 0.5), 
+    0 0 35px rgba(0, 255, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Portofolio{
+   flex-direction: column;
+   min-height: 150vh;
+}
+.Portofolio h1{
+  text-align: center;
+  color: #c711c7;
+  margin-top: 70px;
+  font-size: 50px;
+  margin-bottom: 8px;
+}
+.Portofolio p{
+  text-align: center;
+}
+.contbutt{
+  text-align: center;
+  margin-top: 20px;
+}
+.Portofolio button{
+  font-size: 20px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top:10px;
+  padding-bottom:10px; 
+  border-radius: 20px;
+  color: #F3F4F6;
+   background: rgba(255, 255, 255, 0.05);
+       box-shadow: 
+    0 0 25px rgba(255, 0, 255, 0.5);
+   backdrop-filter: blur(15px);
+   margin: 20px;
+}
+.Portofolio button:hover{
+  transform: scale(1.1);
+}
+.sectionProject{
+  display: flex;
+}
+.CardPT ,.CardInvation {
+ background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 10px;
+    box-shadow: 0 0 20px rgba(60, 0, 100, 0.8);
+  max-width: 400px;
+  text-align: center;
+  margin: 20px auto;
+}
+.CardPT img,.CardInvation img{
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+
+}
+.CardPT:hover,.CardInvation:hover{
+    transform: scale(1.05)!important;
+           box-shadow: 
+    0 0 25px rgba(255, 0, 255, 0.5) !important;
+}
+.ButtonPT,.ButtonInvation{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #a020f0, #ff00ff);
+  color: white;
+  font-weight: bold;
+  text-decoration: none; /* hilangkan underline kalau <a> */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ButtonPT:hover, .ButtonInvation:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+.imgpt,.imginv{
+  border-radius: 20px;
+}
+#sectionSkill{
+  display: flex;
+  justify-content: center; /* agar semua skill ke tengah */
+  gap: 50px;               /* jarak antar skill */
+  flex-wrap: wrap;         /* biar responsif, kalau kepanjangan turun ke bawah */
+  margin: 20px auto;       /* atas-bawah 20px, kiri-kanan auto */
+  max-width: 800px
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  background: rgb(71, 71, 237);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.skill{
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+   box-shadow: 0 0 20px rgba(60, 0, 100, 0.8);
+  border-radius: 20px;
+}
+.skill:hover{
+  transform: scale(1.09)!important;
+       box-shadow: 
+    0 0 25px rgba(211, 5, 211, 0.5);
+}
+.Sertifikat {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(60, 0, 100, 0.8);
+  padding: 10px;       /* biar ada ruang dalam */
+  margin: 20px auto;   /* biar ke tengah */
+  margin-top: 60px;
+  max-width: 400px;    /* batas max */
+}
+.Sertifikat:hover{
+  transform: scale(1.09)!important;
+}
+
+.Serti {
+  width: 100%;         /* gambar akan isi penuh container */
+  height: auto;        /* tinggi menyesuaikan proporsi */
+  border-radius: 10px; /* opsional, biar rapi */
+}
+.hidden {
+  display: none;
+}
+.active-btn {
+  background-color: #7e22ce !important; /* ungu lebih terang */
+  box-shadow: 0 0 15px 5px rgba(126, 34, 206, 0.7);
+  transform: scale(1.05); /* sedikit membesar biar beda */
+  transition: all 0.3s ease;
+}
+.containerformcom{
+    display: flex;
+  align-items: stretch; /* biar tingginya sama */
+  gap: 30px; /* jarak antar card */
+  justify-content: center; /* biar tetap rata tengah */
+  margin-top: 60px;
+    align-items: flex-start; 
+
+}
+.contact{
+  min-height: 125vh;
+}
+.contact h1{
+    text-align: center;
+    color: #c711c7;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 5px; 
+}
+.contact p{
+    text-align: center;
+  }
+.Form1{
+  flex: 1;
+    max-width: 300px;  
+  text-align: center;
+    background: transparent;
+      border-radius: 20px;
+  box-shadow: 0 0 20px rgba(60, 0, 100, 0.8);
+  margin: 0 auto;
+  padding:25px;
+}
+.Knowmeform input{
+     width: 90%;
+      padding: 12px 15px;
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 10px;
+    
+      font-size: 15px;
+      background: transparent; /* transparan */
+      color: white;
+}
+.message1{
+    height: 65px;
+      width: 90%;
+    padding: 12px 15px;
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 10px;
+      background: transparent;
+}
+.Form1 button{
+    padding: 10px;
+    width: 70%;
+    border-radius: 8px;
+    font-size: 20px;
+background: linear-gradient(135deg, #a100ff, #6a00f4);
+    color: white;
+    margin-top: 20px;
+}
+.Form1 button:hover{
+  transform: scale(1.08);
+    box-shadow: 0 0 15px 5px rgba(126, 34, 206, 0.7);
+}
+.comment{
+  flex: 2;
+  max-width: 600px;
+  text-align: center;
+
+    background: transparent;
+      border-radius: 20px;
+  box-shadow: 0 0 20px rgba(60, 0, 100, 0.8);
+  margin: 0 auto;
+  padding:25px;
+}
+#commentfrom input{
+    width: 90%;
+    padding: 12px 15px;
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 10px;
+      background: transparent;
+}
+.comment textarea{
+  height: 110px;
+      width: 90%;
+    padding: 12px 15px;
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 10px;
+      background: transparent;
+}
+.comment button{
+  margin-top: 20px;
+      padding: 10px;
+    width: 70%;
+    border-radius: 8px;
+    font-size: 20px;
+background: linear-gradient(135deg, #a100ff, #6a00f4);
+    color: white;
+}
+.comment button:hover{
+ transform: scale(1.08);
+ box-shadow: 0 0 15px 5px rgba(126, 34, 206, 0.7);
+  }
+  .komen-baru {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+  text-align: left;
+}
+.komen-baru strong {
+  color: #ffb3ff;
+} 
+/* Efek awal: invisible */
+.fade-up, .fade-left, .fade-right, .zoom-in {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+/* Fade Up */
+.fade-up { transform: translateY(40px); }
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade Left */
+.fade-left { transform: translateX(-40px); }
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade Right */
+.fade-right { transform: translateX(40px); }
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom In */
+.zoom-in { transform: scale(0.8); }
+.zoom-in.show {
+  opacity: 1;
+  transform: scale(1);
+}
+/* Efek awal: invisible */
+.fade-up, .fade-left, .fade-right, .zoom-in {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+/* Fade Up */
+.fade-up { transform: translateY(40px); }
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade Left */
+.fade-left { transform: translateX(-40px); }
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade Right */
+.fade-right { transform: translateX(40px); }
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom In */
+.zoom-in { transform: scale(0.8); }
+.zoom-in.show {
+  opacity: 1;
+  transform: scale(1);
+}
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(#c97af7, #7c2ae8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+#music-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* --- Responsive untuk Tablet & Mobile --- */
+@media (max-width: 992px) {
+  header {
+    padding: 15px 40px;
+  }
+  nav ul {
+    gap: 2rem;   /* lebih kecil */
+    font-size: 1rem;
+  }
+  .container1 {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;  /* perkecil font global */
+  }
+
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+     flex-direction: row;
+    flex-wrap: wrap;        /* biar turun kalau nggak muat */
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 14px;/* menu  ke samping */
+    size: 20px;
+    gap: 1rem;
+    margin-top: 10px;
+  }
+  .HOME {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container1 {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .text h1 {
+    font-size: 32px;
+  }
+  .text h3 {
+    font-size: 20px;
+  }
+  .text h4 {
+    font-size: 18px;
+      animation: typing 3s steps(20, end) forwards, blink .5s step-end 6 alternate;
+  animation-delay: 0s, 3s;
+  }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20ch; } /* hanya 25 karakter */
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+  .button1 {
+    margin-left: 0;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+.CV{
+  margin-bottom: 15px;
+}
+  .About {
+    padding: 30px 15px;
+  }
+  .Card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .profile1 {
+    width: 180px;
+    height: 180px;
+    margin-left: 0;
+  }
+
+  .card2 {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .card {
+    margin-right: 0;
+  }
+
+  .Portofolio h1 {
+    font-size: 36px;
+  }
+
+  .sectionProject {
+    flex-direction: column;
+    align-items: center;
+  }
+  .CardPT, .CardInvation {
+    max-width: 90%;
+  }
+  .CardPT img, .CardInvation img {
+    width: 100%;
+    height: auto;
+  }
+
+  #sectionSkill {
+    gap: 20px;
+    max-width: 100%;
+  }
+  .skill {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+  }
+
+  .Sertifikat {
+    max-width: 90%;
+  }
+
+  .containerformcom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .Form1, .comment {
+    max-width: 100%;
+  }
+}
