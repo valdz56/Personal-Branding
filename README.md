@@ -1,0 +1,1 @@
+SO This is the my Personal branding website, I make this web using only html,css and js. And i think (for me) this is my big project since i start learn front end and i make this website around a week 
